@@ -1,0 +1,122 @@
+body{
+    margin: 0% auto;
+    padding: 0;
+}
+.haut-de-page{
+    display: inline flex;
+    align-items: center;
+    padding-top: 60px;
+    width: 100%;
+    background-color: aliceblue;
+    
+}
+
+.bloc{
+    display: flex;
+    margin-left: 400px;
+    
+    align-items: center;
+    
+}
+.inline{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.menu{
+    background-color: #ff3300;
+    color: white;
+    
+    
+
+}
+
+
+
+.menu li{
+    display: inline-flex;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    margin-top: 60px;
+    
+    
+}
+ 
+.top-page{
+    
+    min-height: 90vh;
+    background: url(images/bryam-blanco-nXKWLn8y9qE-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    color: #ffffff;
+    padding: 22rem; 
+    
+}
+.paragraphe1{
+    background-color:rgba(255, 255, 255, 0.8);
+    color: black; 
+    flex-direction: column;
+    padding-left: 10px;
+
+}
+    
+
+.paragraphe{
+    display: inline flex;
+    align-items: center;
+    font-size: 30px;
+    background-size: cover;
+    
+}
+.flècha{
+    margin-right:10px ;
+    margin-left: 10px;
+}
+
+.button1{
+    color: #ffffff;
+    text-decoration: none;
+    
+    
+    
+
+}
+.color1{
+    background-color: #ff3300;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 180px;
+    margin-left: 180px;
+
+}
+.a-propos{
+    margin-left: 40px;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+.titre1{
+    color: #ff3300;
+        
+}
+.icone{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.text{
+    display: flex;
+    align-items: center;
+    
+}
+
+    
+
+    
+
+
+
+
