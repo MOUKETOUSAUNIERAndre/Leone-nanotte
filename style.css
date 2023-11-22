@@ -1,121 +1,396 @@
-body{
-    margin: 0% auto;
-    padding: 0;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif ;
+    scroll-behavior: smooth;
 }
-.haut-de-page{
-    display: inline flex;
-    align-items: center;
-    padding-top: 60px;
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
     width: 100%;
-    background-color: aliceblue;
-    
-}
-
-.bloc{
+    padding: 20px 10px;
+    z-index: 1;
     display: flex;
-    margin-left: 400px;
-    
+    justify-content: space-evenly;
     align-items: center;
-    
-}
-.inline{
-    display: flex;
-    align-items: center;
-    margin-left: 70px;
-}
+    transition: 0,5s;
+    background-color: #669999;
 
-.menu{
-    background-color: #ff3300;
-    color: white;
-    
-    
 
 }
 
-
-
-.menu li{
-    display: inline-flex;
-    margin-bottom: 10px;
-    margin-left: 200px;
-    margin-top: 60px;
-    
-    
-}
- 
-.top-page{
-    
-    min-height: 90vh;
-    background: url(images/bryam-blanco-nXKWLn8y9qE-unsplash.jpg);
-    background-size: cover;
-    background-position: top;
-    color: #ffffff;
-    padding: 22rem; 
-    
-}
-.paragraphe1{
-    background-color:rgba(255, 255, 255, 0.8);
-    color: black; 
-    flex-direction: column;
-    padding-left: 10px;
-
-}
-    
-
-.paragraphe{
-    display: inline flex;
-    align-items: center;
-    font-size: 30px;
-    background-size: cover;
-    
-}
-.flècha{
-    margin-right:10px ;
-    margin-left: 10px;
+header .navbar a{
+    color: #000;
 }
 
-.button1{
-    color: #ffffff;
+.logo{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
     text-decoration: none;
-    
-    
-    
 
 }
-.color1{
-    background-color: #ff3300;
+
+.logo span{
+    color: #fb911f;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+}
+
+.navbar li{
+    list-style: none;
+
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.btn-reserve{
+    padding: 10px 20px;
+    background: #fb911f;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.btn-reserve:hover{
+    background: #d87710;
+    transition: ease-out;
+
+}
+
+header .navbar li a:hover{
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;
+}
+
+.section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/cupcakes-2179039_1280.jpg);
+    background-size: cover;
+}
+
+.section .contenu{
+    max-width: 70%;
     text-align: center;
-    margin-bottom: 10px;
-    margin-right: 180px;
-    margin-left: 180px;
-
-}
-.a-propos{
-    margin-left: 40px;
-    align-items: center;
-    font-size: 30px;
 }
 
-
-.titre1{
-    color: #ff3300;
-        
+.section .contenu h2{
+    color: #fff;
+    font-size: 3em;
+    text-transform: capitalize;
 }
-.icone{
+
+.contenu p:nth-child(2){
+     color: #fff;
+     font-size: 1.2em;
+}
+
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+
+.titre-texte{
+    color: #000;
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.titre-texte span{
+    color: #fb911f;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.row .col50 img{
+     height: 450px;
+     width: 600px;
+     position:relative
+}
+
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+}
 
+.titre a{
+    text-decoration: none;
+}
+
+
+.nos-produits{
+    padding-top: 10px;
+}
+
+.Notre-equipe{
+    padding-bottom: 10px;
+}
+
+
+.cupcakes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-align: center;
+    
+
+}
+
+.cupcakes .box{
+    width: 250px;
+    margin-top: 10px;
+    border: 20px solid #fff;
     
 }
-.text{
+
+.Notre-equipe .cupcakes .box{
+    padding-top: 300px;
+}
+    
+
+.temoignage h2{
+    color: #fb911f;
+}
+
+
+
+.temoignages-Clients .cupcakes{
+    background-color: antiquewhite;
+    display: flex;
+    margin-top: 40px;
+    width: 100;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-style: italic;
+}
+
+.temoignages-Clients .cupcakes .box{
+    width: 340px;
+    margin: 20px;
+    background:  #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    
+}
+
+.temoignages-Clients .cupcakes .box .inbox{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    
+}
+
+temoignages-Clients .cupcakes .box .inbox img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-left: 40px ;
+}
+
+.temoignages-Clients .cupcakes .box .text h3{
+    color: #fb911f;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+
+.contact span{
+    color: #fb911f;
+    margin-left: 400px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contacts{
+    background-color: #f0f5f5;
+    
+}
+
+
+.email{
+    display: flex;
+    align-items: center;
+    
+}
+.tel{
     display: flex;
     align-items: center;
     
 }
 
+.réseau{
+    
+    background-color: #000;
+    
     
 
     
+}
+
+
+
+.sociaux p{
+    color: #fff;
+    margin-left: 5px;
+    text-align: center;
+
+}
+
+.contacts{
+    display: flex;
+}
+
+.contacts .forms{
+    margin-left: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.formulaire h1 p{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.inputboite{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.inputboite{
+    width: 100%;
+    font-size: 16px;
+    
+    
+}
+
+.inputboite input[type="submit"]{
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fb911f;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-align: center;
+    transition: 0,5s;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .row .col50{
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+}
+
+
+
+ 
+
+
+
+    
+    
+
+        
+        
+
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+    
+    
+
+
+
+    
+
+
+
 
 
 
